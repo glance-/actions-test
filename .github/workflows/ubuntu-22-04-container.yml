@@ -6,12 +6,11 @@ on:
     - master
 
 jobs:
-  android-build-container:
+  build:
     runs-on: ubuntu-latest
-   container:
-     image: ubuntu:22.04
+    container:
+      image: ubuntu:22.04
 
     - name: nproc
-      id: nproc
       run: |
         nproc

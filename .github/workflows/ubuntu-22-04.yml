@@ -6,10 +6,9 @@ on:
     - master
 
 jobs:
-  android-build-container:
+  build:
     runs-on: ubuntu-22.04
 
     - name: nproc
-      id: nproc
       run: |
         nproc
