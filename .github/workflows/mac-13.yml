@@ -7,7 +7,6 @@ on:
 
 jobs:
   build:
-    needs: build-documentation
     runs-on: macOS-13
     steps:
 
