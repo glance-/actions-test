@@ -13,3 +13,7 @@ jobs:
     - name: sysctl -n hw.physicalcpu
       run: |
         sysctl -n hw.physicalcpu
+
+    - name: nproc
+      run: |
+        nproc || true
