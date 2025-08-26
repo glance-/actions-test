@@ -1,0 +1,17 @@
+name: Windows
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    container:
+      image: docker://subsurface/mxe-build:3.4.0
+
+    steps:
+    - name: nproc
+      run: |
+        nproc

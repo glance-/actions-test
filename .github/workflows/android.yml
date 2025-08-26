@@ -1,0 +1,16 @@
+name: android
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: docker://subsurface/android-build:5.15.3
+
+    steps:
+    - name: nproc
+      run: |
+        nproc

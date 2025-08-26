@@ -1,0 +1,16 @@
+name: linux-debian-bookworm
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  setup-build:
+    runs-on: ubuntu-latest
+    container:
+      image: debian:trixie
+
+    steps:
+    - name: nproc
+      run: |
+        nproc

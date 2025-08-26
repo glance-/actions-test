@@ -1,0 +1,17 @@
+name: ubuntu-24-04
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  android-build-container:
+    runs-on: ubuntu-latest
+   container:
+     image: ubuntu:24.04
+
+    - name: nproc
+      id: nproc
+      run: |
+        nproc

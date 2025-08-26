@@ -1,0 +1,16 @@
+name: .github/workflows/linux-fedora-35-qt6
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  setup-build:
+    runs-on: ubuntu-latest
+    container:
+      image: fedora:35
+
+    steps:
+    - name: nproc
+      run: |
+        nproc

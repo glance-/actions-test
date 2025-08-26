@@ -1,0 +1,16 @@
+name: fedora
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  setup-build:
+    runs-on: ubuntu-latest
+    container:
+      image: fedora:latest
+
+    steps:
+    - name: nproc
+      run: |
+        nproc

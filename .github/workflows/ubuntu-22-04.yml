@@ -1,0 +1,15 @@
+name: ubuntu-22-04
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  android-build-container:
+    runs-on: ubuntu-22.04
+
+    - name: nproc
+      id: nproc
+      run: |
+        nproc
