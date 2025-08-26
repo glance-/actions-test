@@ -11,6 +11,7 @@ jobs:
     container:
       image: ubuntu:22.04
 
+    steps:
     - name: nproc
       run: |
         nproc
